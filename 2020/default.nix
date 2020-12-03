@@ -10,15 +10,15 @@ pkgs.stdenv.mkDerivation {
     entr
   ];
   buildPhase = ''
-    g++ day1.cpp -o day1
-    g++ day2.cpp -o day2
-    #g++ day3.cpp -o day3
+    g++ day1.cpp -o day1.out
+    g++ day2.cpp -o day2.out
+    g++ day3.cpp -o day3.out
   '';
   installPhase = ''
     mkdir $out
-    ./day1 > $out/day1
-    ./day2 > $out/day2
-    #./day3 > $out/day3
+    ./day1.out > $out/day1
+    ./day2.out > $out/day2
+    ./day3.out > $out/day3
   '';
   doInstallCheck = true;
   installCheckInputs = with pkgs; [
