@@ -17,8 +17,8 @@ int main(int argc, char *argv[])
         std::cout << "Part one :: " << i << ", " << j << " :: ";
         std::cout << puzzle_input[i] << " + " << puzzle_input[j];
         std::cout << " = " << result << " :: ";
-        std::cout << puzzle_input[i] << " * " << puzzle_input[j];
-        std::cout << " = " << (puzzle_input[i] * puzzle_input[j]) << std::endl;
+        std::cout << puzzle_input[i] << " * " << puzzle_input[j] << std::endl;
+        std::cout << "Part one = " << (puzzle_input[i] * puzzle_input[j]) << std::endl;
         std::cout << "----" << std::endl;
       }
       for (int k = j + 1; k < puzzle_input_size; k++) {
@@ -27,8 +27,8 @@ int main(int argc, char *argv[])
           std::cout << "Part two :: " << i << ", " << j << ", " << k << " :: ";
           std::cout << puzzle_input[i] << " + " << puzzle_input[j] << " + " << puzzle_input[k];
           std::cout << " = " << result << " :: ";
-          std::cout << puzzle_input[i] << " * " << puzzle_input[j] << " * " << puzzle_input[k];
-          std::cout << " = " << (puzzle_input[i] * puzzle_input[j] * puzzle_input[k]) << std::endl;
+          std::cout << puzzle_input[i] << " * " << puzzle_input[j] << " * " << puzzle_input[k] << std::endl;
+          std::cout << "Part two = " << (puzzle_input[i] * puzzle_input[j] * puzzle_input[k]) << std::endl;
           std::cout << "----" << std::endl;
         }
       }

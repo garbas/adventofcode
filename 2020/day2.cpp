@@ -73,8 +73,8 @@ int main(int argc, char *argv[])
     }
     input.close();
 
-    std::cout << "Part one: VALID PASSWORDS: " << valid_passwords << std::endl;
-    std::cout << "Part two: VALID PASSWORDS: " << valid_passwords_two << std::endl;
+    std::cout << "Part one = " << valid_passwords << std::endl;
+    std::cout << "Part two = " << valid_passwords_two << std::endl;
     return 0;
   } else {
     std::cout << "No file day2.input exists!" << std::endl;
