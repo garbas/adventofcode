@@ -13,12 +13,14 @@ pkgs.stdenv.mkDerivation {
     g++ day1.cpp -o day1.out
     g++ day2.cpp -o day2.out
     g++ day3.cpp -o day3.out
+    g++ day4.cpp -o day4.out
   '';
   installPhase = ''
     mkdir $out
     ./day1.out > $out/day1
     ./day2.out > $out/day2
     ./day3.out > $out/day3
+    ./day4.out > $out/day4
   '';
   doInstallCheck = true;
   installCheckInputs = with pkgs; [

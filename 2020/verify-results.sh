@@ -23,3 +23,11 @@
 @test "Day3 - Part two" {
   [ "$(cat $out/day3 | grep 'Part two = ')" = "Part two = 3064612320" ]
 }
+
+@test "Day4 - Part one" {
+  [ "$(cat $out/day4 | grep 'Part one = ')" = "Part one = 260" ]
+}
+
+@test "Day4 - Part two" {
+  [ "$(cat $out/day4 | grep 'Part two = ')" = "Part two = 153" ]
+}
